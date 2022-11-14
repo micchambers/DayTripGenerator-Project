@@ -13,12 +13,18 @@ def random_item_picker(list):
     random_item = random.choice(list)
     return random_item
 
+# def reroll(chosen): 
+
 def run_trip_generator(list_1, list_2, list_3, list_4):
     chosen_dest = random_item_picker(list_1)
+    print(f"Your chosen destination is {chosen_dest}")
     chosen_trans = random_item_picker(list_2)
+    print(f"Your chosen transportation is {chosen_trans}")
     chosen_ent = random_item_picker(list_2)
+    print(f"Your chosen entertainment is {chosen_ent}")
     chosen_rest = random_item_picker(list_3)
-    print(f"On today's trip, you'll be going to {chosen_dest} by {chosen_trans}, stopping to {chosen_ent} and to eat at {chosen_rest}")
+    print(f"Your chosen restaurant is {chosen_rest}")
+    # print(f"On today's trip, you'll be going to {chosen_dest} by {chosen_trans}, stopping to {chosen_ent} and to eat at {chosen_rest}")
     
 
 
